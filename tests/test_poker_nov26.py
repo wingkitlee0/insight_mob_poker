@@ -90,7 +90,8 @@ def test_hand_pair_5():
 
 
 def test_winner_4():
-   assert winner("2C 3H 4S 2D AH", "2C 3H 4S AD KH") == 1
+    # hand1 wins because of a pair
+    assert winner("2C 3H 4S 2D AH", "2C 3H 4S AD KH") == 1
 
 def test_winner_5():
    assert winner("2C 2H 4S AD JH", "3C 3H 4S QD KH") == 2
