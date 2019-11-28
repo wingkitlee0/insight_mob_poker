@@ -58,9 +58,9 @@ def test_suit():
     card = Card("7C")
     assert card.suit == "C"
 
-def test_hand():
-    hand = Hand("2C 3H 4S JD KH")
-    assert hand.highest_card.str_card == "KH"
+#def test_hand():
+#    hand = Hand("2C 3H 4S JD KH")
+#    assert hand.highest_card.str_card == "KH"
 
 class Hand:
     def __init__(self, str_hand):
