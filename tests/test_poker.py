@@ -125,6 +125,9 @@ def test_winner_5():
 def test_winner_6():
     assert winner("2C 2H 4S AD JH", "3C 3H 4S QD KH") == 2
 
+def test_winner_7():
+    assert winner("AD 2H 5S 9C 3D", "2C 3H 4S 8C AH") == 1
+
 def test_winner_flush_1():
     assert winner("2C 3C 4C AC JC", "3S 6S 4S QS KS") == 1
 
