@@ -72,8 +72,13 @@ class Card:
         self.card_dict = {'A':14, 'K':13 , 'Q':12, 'J':11}
         for i in range(2,11,1):
             self.card_dict[str(i)] = i
-        self.rank = self.get_rank_from_card()
-        self.suit = self.str_card[-1]
+
+        if len(self.str_card) < 2:
+            self.rank = None
+            self.suit = None
+        else:
+            self.rank = self.get_rank_from_card()
+            self.suit = self.str_card[-1]
 
     def get_rank_from_card(self):
         # "2H" -> 2
